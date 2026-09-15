@@ -5,20 +5,16 @@ mode: rule
 log-level: info
 proxies:
 - name: 🌐 其他地区 (Other) 01 - xiaohe
-  server: 104.16.72.30
-  port: 443
+  server: 188.114.97.6
+  port: 2086
   udp: true
   type: vless
-  uuid: a8b1d666-d3ba-4b17-90c4-ba7514c74f78
-  tls: true
-  servername: xstack.mahanfixe.workers.dev
-  skip-cert-verify: false
-  client-fingerprint: chrome
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   network: ws
   ws-opts:
-    path: /xiron
+    path: /
     headers:
-      Host: xstack.mahanfixe.workers.dev
+      Host: zb1zi.s3nx.dyz.hh.vavava.kdns.fr
 proxy-groups:
 - name: PROXIES
   type: select
