@@ -5,19 +5,16 @@ mode: rule
 log-level: info
 proxies:
 - name: 🇸🇦 沙特 (Saudi Arabia) 01 - xiaohe
-  server: 188.130.207.30
-  port: 2053
+  server: 199.232.78.101
+  port: 443
   udp: true
-  type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  tls: true
-  servername: cdn8848.776676.xyz
-  skip-cert-verify: true
+  type: trojan
+  password: mitivpn
+  sni: ssl.fastly.com
+  skip-cert-verify: false
   network: ws
   ws-opts:
-    path: /
-    headers:
-      Host: cdn8848.776676.xyz
+    path: /---@MetiVIP---@MetiVIP/---@MetiVIP---@MetiVIP/---@MetiVIP---@MetiVIP/des---@MetiVIP---@MetiVIP/---@MetiVIP---@MetiVIP/---@MetiVIP---@MetiVIP
 proxy-groups:
 - name: PROXIES
   type: select
