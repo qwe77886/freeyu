@@ -38,6 +38,14 @@ proxies:
   sni: iq5ny.pleiades.codes
   skip-cert-verify: false
 - name: 🇫🇮 芬兰 (Finland) 04 - xiaohe
+  server: dissolvedvpn.eu.cc
+  port: 443
+  udp: true
+  type: hysteria2
+  password: dissolved-vpn-pass
+  sni: dissolvedvpn.eu.cc
+  skip-cert-verify: true
+- name: 🇫🇮 芬兰 (Finland) 05 - xiaohe
   server: me6.movieseryalirani.ir
   port: 57361
   udp: true
@@ -54,6 +62,7 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 02 - xiaohe
   - 🇫🇮 芬兰 (Finland) 03 - xiaohe
   - 🇫🇮 芬兰 (Finland) 04 - xiaohe
+  - 🇫🇮 芬兰 (Finland) 05 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -63,5 +72,6 @@ proxy-groups:
   - 🇫🇮 芬兰 (Finland) 02 - xiaohe
   - 🇫🇮 芬兰 (Finland) 03 - xiaohe
   - 🇫🇮 芬兰 (Finland) 04 - xiaohe
+  - 🇫🇮 芬兰 (Finland) 05 - xiaohe
 rules:
 - MATCH,PROXIES
