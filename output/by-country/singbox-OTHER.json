@@ -5,25 +5,26 @@
   "outbounds": [
     {
       "type": "vless",
-      "tag": "🇯🇵 日本 (Japan) 01 (家宽) - xiaohe",
-      "server": "116.204.164.30",
-      "server_port": 7443,
-      "uuid": "d5f29a64-da5d-4f99-b3c4-ae92cc39ad5f",
+      "tag": "🌐 其他地区 (Other) 01 - xiaohe",
+      "server": "104.21.72.213",
+      "server_port": 443,
+      "uuid": "a2c57a6c-dacb-44d1-9055-fb42d4c888a5",
       "tls": {
         "enabled": true,
-        "server_name": "ke859ch2gse1iery3hiz.e3q4a5mjld11kpj0zj8dq.workers.dev",
+        "server_name": "pew.dianawmoon.dpdns.org",
         "insecure": false,
+        "alpn": [
+          "http/1.1"
+        ],
         "utls": {
           "enabled": true,
-          "fingerprint": "chrome"
+          "fingerprint": "random"
         }
       },
       "transport": {
-        "type": "ws",
-        "path": "/@Marisa_kristi",
-        "headers": {
-          "Host": "ke859ch2gse1iery3hiz.e3q4a5mjld11kpj0zj8dq.workers.dev"
-        }
+        "type": "httpupgrade",
+        "path": "/27729/dianahtupgd",
+        "host": "pew.dianawmoon.dpdns.org"
       }
     },
     {
@@ -31,14 +32,14 @@
       "tag": "select",
       "outbounds": [
         "auto",
-        "🇯🇵 日本 (Japan) 01 (家宽) - xiaohe"
+        "🌐 其他地区 (Other) 01 - xiaohe"
       ]
     },
     {
       "type": "urltest",
       "tag": "auto",
       "outbounds": [
-        "🇯🇵 日本 (Japan) 01 (家宽) - xiaohe"
+        "🌐 其他地区 (Other) 01 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
