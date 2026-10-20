@@ -6,7 +6,7 @@
     {
       "type": "vless",
       "tag": "🇵🇱 波兰 (Poland) 01 - xiaohe",
-      "server": "45.194.66.202",
+      "server": "45.194.66.224",
       "server_port": 443,
       "uuid": "f8d52ece-fad4-478d-875d-df6eed3befa7",
       "flow": "xtls-rprx-vision",
@@ -15,7 +15,7 @@
         "server_name": "pl.golangwikito.cfd",
         "utls": {
           "enabled": true,
-          "fingerprint": "random"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
@@ -27,7 +27,7 @@
     {
       "type": "trojan",
       "tag": "🇵🇱 波兰 (Poland) 02 - xiaohe",
-      "server": "31.133.0.186",
+      "server": "pl2.dedushka.top",
       "server_port": 443,
       "password": "4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA",
       "tls": {
@@ -45,7 +45,7 @@
       "tls": {
         "enabled": true,
         "server_name": "pl1.dedushka.top",
-        "insecure": false
+        "insecure": true
       }
     },
     {
@@ -60,7 +60,7 @@
         "server_name": "browser.yandex.com",
         "utls": {
           "enabled": true,
-          "fingerprint": "random"
+          "fingerprint": "chrome"
         },
         "reality": {
           "enabled": true,
