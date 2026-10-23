@@ -17,6 +17,17 @@ proxies:
   servername: www.apple.com
   client-fingerprint: firefox
 - name: 🇮🇳 印度 (India) 02 - xiaohe
+  server: 13.140.56.100
+  port: 14430
+  udp: true
+  type: vless
+  uuid: 68512eac-cd53-4de3-8d1e-08f6e04af1a9
+  network: ws
+  ws-opts:
+    path: /vless
+    headers:
+      Host: 13.140.56.100
+- name: 🇮🇳 印度 (India) 03 - xiaohe
   server: in.smrtai.top
   port: 443
   udp: true
@@ -28,7 +39,7 @@ proxies:
     short-id: 6bdc8320
   servername: www.cloudflare.com
   client-fingerprint: chrome
-- name: 🇮🇳 印度 (India) 03 - xiaohe
+- name: 🇮🇳 印度 (India) 04 - xiaohe
   server: 165.99.222.161
   port: 443
   udp: true
@@ -39,32 +50,44 @@ proxies:
   reality-opts:
     public-key: SC6AnZ_BlvDruiGFpDRno9b1V3wMmq9gjB-KEHHUlE4
   servername: in1.vkusnews.com
-  client-fingerprint: chrome
-- name: 🇮🇳 印度 (India) 04 - xiaohe
-  server: 13.140.56.100
-  port: 14430
+  client-fingerprint: firefox
+- name: 🇮🇳 印度 (India) 05 - xiaohe
+  server: 152.67.8.205
+  port: 80
   udp: true
-  type: vless
-  uuid: 68512eac-cd53-4de3-8d1e-08f6e04af1a9
+  type: vmess
+  uuid: 9db4c708-aef8-4359-821b-38e47990be0d
+  alterId: 0
+  cipher: auto
   network: ws
   ws-opts:
-    path: /vless
-    headers:
-      Host: 13.140.56.100
-- name: 🇮🇳 印度 (India) 05 - xiaohe
-  server: in.tronsg.com
-  port: 443
-  udp: true
-  type: trojan
-  password: Trojan@82164024
-  sni: in.tronsg.com
-  skip-cert-verify: true
+    path: /
 - name: 🇮🇳 印度 (India) 06 - xiaohe
-  server: 5.253.29.254
-  port: 10443
+  server: 152.67.8.205
+  port: 80
   udp: true
-  type: vless
-  uuid: c7c27192-60a5-4ce1-b613-95270d82309d
+  type: vmess
+  uuid: 9db4c708-aef8-4359-821b-38e47990be0d
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: in-152.67.8.205-0250
+- name: 🇮🇳 印度 (India) 07 - xiaohe
+  server: 152.67.8.205
+  port: 80
+  udp: true
+  type: vmess
+  uuid: 9db4c708-aef8-4359-821b-38e47990be0d
+  alterId: 0
+  cipher: auto
+  network: ws
+  ws-opts:
+    path: /
+    headers:
+      Host: 152.67.8.205
 proxy-groups:
 - name: PROXIES
   type: select
@@ -76,6 +99,7 @@ proxy-groups:
   - 🇮🇳 印度 (India) 04 - xiaohe
   - 🇮🇳 印度 (India) 05 - xiaohe
   - 🇮🇳 印度 (India) 06 - xiaohe
+  - 🇮🇳 印度 (India) 07 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -87,5 +111,6 @@ proxy-groups:
   - 🇮🇳 印度 (India) 04 - xiaohe
   - 🇮🇳 印度 (India) 05 - xiaohe
   - 🇮🇳 印度 (India) 06 - xiaohe
+  - 🇮🇳 印度 (India) 07 - xiaohe
 rules:
 - MATCH,PROXIES
