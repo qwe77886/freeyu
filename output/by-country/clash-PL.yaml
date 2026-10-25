@@ -17,12 +17,6 @@ proxies:
   type: vless
   uuid: 1a8ecc41-6e62-431b-8eca-87c2fa4dc286
 - name: 🇵🇱 波兰 (Poland) 03 - xiaohe
-  server: site.teslamotor.site
-  port: 20001
-  udp: true
-  type: vless
-  uuid: 8e8210b7-71a4-4799-8b9b-2e69698b1eaf
-- name: 🇵🇱 波兰 (Poland) 04 - xiaohe
   server: 77.232.135.141
   port: 8445
   udp: true
@@ -35,19 +29,12 @@ proxies:
   network: grpc
   grpc-opts:
     grpc-service-name: beru-pl
-- name: 🇵🇱 波兰 (Poland) 05 - xiaohe
-  server: 54.37.131.126
-  port: 80
+- name: 🇵🇱 波兰 (Poland) 04 - xiaohe
+  server: site.teslamotor.site
+  port: 20001
   udp: true
-  type: vmess
-  uuid: 6deef9ad-1357-443d-f95c-cb18952c20b3
-  alterId: 0
-  cipher: auto
-  network: ws
-  ws-opts:
-    path: /
-    headers:
-      Host: google.whatsapp.snapp.torob.basalam.hesanid8.ir.
+  type: vless
+  uuid: 8e8210b7-71a4-4799-8b9b-2e69698b1eaf
 proxy-groups:
 - name: PROXIES
   type: select
@@ -57,7 +44,6 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 02 - xiaohe
   - 🇵🇱 波兰 (Poland) 03 - xiaohe
   - 🇵🇱 波兰 (Poland) 04 - xiaohe
-  - 🇵🇱 波兰 (Poland) 05 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -67,6 +53,5 @@ proxy-groups:
   - 🇵🇱 波兰 (Poland) 02 - xiaohe
   - 🇵🇱 波兰 (Poland) 03 - xiaohe
   - 🇵🇱 波兰 (Poland) 04 - xiaohe
-  - 🇵🇱 波兰 (Poland) 05 - xiaohe
 rules:
 - MATCH,PROXIES
