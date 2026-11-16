@@ -46,12 +46,12 @@
     {
       "type": "vless",
       "tag": "🇮🇳 印度 (India) 03 - xiaohe",
-      "server": "85.234.100.32",
+      "server": "13.140.253.35",
       "server_port": 443,
-      "uuid": "c1208c5a-2350-0003-affd-fc41b4319286",
+      "uuid": "06a5afa1-2bbc-a5d1-1770-becd1089c636",
       "tls": {
         "enabled": true,
-        "server_name": "decdn-28.nome-rkp.net",
+        "server_name": "xray-dmr3b3hy-calm-maple-7.cloady.io",
         "insecure": false,
         "utls": {
           "enabled": true,
@@ -60,9 +60,9 @@
       },
       "transport": {
         "type": "ws",
-        "path": "/media/ws/",
+        "path": "/0175469f14317d82",
         "headers": {
-          "Host": "decdn-28.nome-rkp.net"
+          "Host": "xray-dmr3b3hy-calm-maple-7.cloady.io"
         }
       }
     },
@@ -81,29 +81,6 @@
       }
     },
     {
-      "type": "vless",
-      "tag": "🇮🇳 印度 (India) 05 - xiaohe",
-      "server": "104.21.13.108",
-      "server_port": 443,
-      "uuid": "06a5afa1-2bbc-a5d1-1770-becd1089c636",
-      "tls": {
-        "enabled": true,
-        "server_name": "small-forest-d3e9.sarahds.workers.dev",
-        "insecure": false,
-        "utls": {
-          "enabled": true,
-          "fingerprint": "chrome"
-        }
-      },
-      "transport": {
-        "type": "ws",
-        "path": "/0175469f14317d82",
-        "headers": {
-          "Host": "small-forest-d3e9.sarahds.workers.dev"
-        }
-      }
-    },
-    {
       "type": "selector",
       "tag": "select",
       "outbounds": [
@@ -111,8 +88,7 @@
         "🇮🇳 印度 (India) 01 - xiaohe",
         "🇮🇳 印度 (India) 02 - xiaohe",
         "🇮🇳 印度 (India) 03 - xiaohe",
-        "🇮🇳 印度 (India) 04 - xiaohe",
-        "🇮🇳 印度 (India) 05 - xiaohe"
+        "🇮🇳 印度 (India) 04 - xiaohe"
       ]
     },
     {
@@ -122,8 +98,7 @@
         "🇮🇳 印度 (India) 01 - xiaohe",
         "🇮🇳 印度 (India) 02 - xiaohe",
         "🇮🇳 印度 (India) 03 - xiaohe",
-        "🇮🇳 印度 (India) 04 - xiaohe",
-        "🇮🇳 印度 (India) 05 - xiaohe"
+        "🇮🇳 印度 (India) 04 - xiaohe"
       ],
       "url": "https://www.gstatic.com/generate_204"
     },
