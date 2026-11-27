@@ -16,18 +16,6 @@ proxies:
   skip-cert-verify: false
   client-fingerprint: firefox
 - name: 🇵🇱 波兰 (Poland) 02 - xiaohe
-  server: h-pl.ok-habits.xyz
-  port: 443
-  udp: true
-  type: vless
-  uuid: 259ec8bc-5a6b-4b33-8a71-c40e8d150c24
-  tls: true
-  reality-opts:
-    public-key: fNfokzklCF4l_c8k8PciOCjm5ecNoF_sNLjEtaO-xzI
-    short-id: db04ce8bdb8900f1
-  servername: 1.4.8.8
-  client-fingerprint: chrome
-- name: 🇵🇱 波兰 (Poland) 03 - xiaohe
   server: 48.102.207.169
   port: 443
   udp: true
@@ -47,7 +35,6 @@ proxy-groups:
   - AUTO
   - 🇵🇱 波兰 (Poland) 01 - xiaohe
   - 🇵🇱 波兰 (Poland) 02 - xiaohe
-  - 🇵🇱 波兰 (Poland) 03 - xiaohe
 - name: AUTO
   type: url-test
   url: https://www.gstatic.com/generate_204
@@ -55,6 +42,5 @@ proxy-groups:
   proxies:
   - 🇵🇱 波兰 (Poland) 01 - xiaohe
   - 🇵🇱 波兰 (Poland) 02 - xiaohe
-  - 🇵🇱 波兰 (Poland) 03 - xiaohe
 rules:
 - MATCH,PROXIES
